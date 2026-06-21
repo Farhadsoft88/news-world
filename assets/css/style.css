@@ -85,9 +85,7 @@ body {
   background-color: #fff;
 }
 
-.container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1280px !important;
-}
+
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
@@ -10886,3 +10884,6 @@ header .navbar .navbar-brand {
     font-weight: 700;
 }
 /*# sourceMappingURL=maps/style.css.map */
+.container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1280px !important;
+}
