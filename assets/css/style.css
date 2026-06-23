@@ -10885,5 +10885,44 @@ header .navbar .navbar-brand {
 }
 /*# sourceMappingURL=maps/style.css.map */
 .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1280px !important;
+    max-width: 1300px !important;
+}
+
+#big-thumb img {
+    height: 439px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 7px !important;
+}
+header {
+    background: #BA0300;
+}
+.badge-dark {
+    color: #fff;
+    background-color: #ba0300;
+}
+
+
+.social-media li a {
+    padding: 7px 10px;
+    background: #000000;
+    border-radius: 8px;
+}
+
+header .navbar-bottom .navbar-nav .nav-item .nav-link:hover {
+    color: #0000008f !important;
+}
+
+.sticky {
+    background: #ba0300e0 !important;
+    padding: 10px 23px !important;
+    backdrop-filter: blur(6px) !important;
+}
+
+footer .footer-top {
+    background: #222 !important;
+}
+
+footer .footer-bottom {
+    background: #222 !important;
 }
