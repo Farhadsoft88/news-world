@@ -10884,8 +10884,9 @@ header .navbar .navbar-brand {
     font-weight: 700;
 }
 /*# sourceMappingURL=maps/style.css.map */
+
 .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1300px !important;
+    max-width: 1350px !important;
 }
 
 #big-thumb img {
@@ -10925,4 +10926,86 @@ footer .footer-top {
 
 footer .footer-bottom {
     background: #222 !important;
+}
+
+.language-dropdown{
+    display:inline-block;
+}
+
+.language-dropdown .btn {
+    border-radius: 30px;
+    padding: 8px 18px;
+    font-weight: 600;
+    gap: 7px;
+}
+
+.language-dropdown img{
+    border-radius:3px;
+}
+
+.language-dropdown .dropdown-menu{
+    border:none;
+    border-radius:12px;
+    min-width:220px;
+}
+
+.nav-itemtranslators .dropdown-item {
+    gap: 10px !important;   
+}
+
+.language-dropdown .dropdown-item{
+    padding:10px 15px;
+    display:flex;
+    align-items:center;
+}
+
+.language-dropdown .dropdown-item:hover{
+    background:#f5f5f5;
+}
+
+.skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0 !important;
+}
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+.goog-tooltip {
+    display: none !important;
+}
+
+.goog-text-highlight {
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.card .card-body {
+    padding: 1rem 1rem !important;
+}
+
+.content-wrapper .border-bottom-blue {
+    border-bottom: solid 1px #dbe5f2 !important;
+}
+
+.rotate-img img {
+    width: 100%;
+}
+
+.card-grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.news_item img {
+    height: 175px;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center;
 }
