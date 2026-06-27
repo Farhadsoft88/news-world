@@ -64,3 +64,43 @@ $(function() {
     fixedBackground: true
   });
 });
+
+
+// translate js 
+
+function googleTranslateElementInit() {
+
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'bn,en,zh-CN,ar,fr',
+        autoDisplay: false
+    }, 'google_translate_element');
+
+    // Default Bangla
+    setTimeout(function () {
+        changeLanguage('bn', 'বাংলা', 'bd');
+    }, 1000);
+}
+
+function changeLanguage(lang, name, flag) {
+
+    document.getElementById("selectedLanguage").innerHTML = name;
+
+    document.getElementById("selectedFlag").src =
+        "https://flagcdn.com/w40/" + flag + ".png";
+
+    var interval = setInterval(function () {
+
+        var select = document.querySelector(".goog-te-combo");
+
+        if (select) {
+
+            select.value = lang;
+            select.dispatchEvent(new Event("change"));
+
+            clearInterval(interval);
+        }
+
+    }, 300);
+}
+
