@@ -10,6 +10,17 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+@import url('https://cdn.jsdelivr.net/gh/radiustheme/solaimanlipi@master/fonts/stylesheet.css');
+
+body{
+    font-family: 'SolaimanLipi', sans-serif;
+}
+
+body p{
+  font-family: 'SolaimanLipi';
+}
+
 :root {
   --blue: #5e50f9;
   --indigo: #6610f2;
@@ -45,7 +56,7 @@
   --success: #3e8177;
   --info: #4d7cff;
   --warning: #f5a623;
-  --danger: #d1011c;
+  --danger: #BA0300;
   --light: #f8f8f8;
   --dark: #000000;
   --breakpoint-xs: 0;
@@ -76,7 +87,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji","solaimanlipi";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -84,8 +95,6 @@ body {
   text-align: left;
   background-color: #fff;
 }
-
-
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
@@ -10915,9 +10924,9 @@ header .navbar-bottom .navbar-nav .nav-item .nav-link:hover {
 }
 
 .sticky {
-    background: #ba0300e0 !important;
-    padding: 10px 23px !important;
-    backdrop-filter: blur(6px) !important;
+    background: #948888ba !important;
+    padding: 0px 40px !important;
+    backdrop-filter: blur(10px) !important;
 }
 
 footer .footer-top {
@@ -11000,7 +11009,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding-top: 30px;
+    padding-top: 48px;
 }
 
 .news_item img {
@@ -11008,4 +11017,97 @@ body {
     object-fit: cover;
     border-radius: 10px;
     object-position: center;
+}
+.flash-news-banner {
+    padding: 5px 0px;
+}
+header .navbar-top {
+    padding: 5px 0;
+}
+header .navbar-bottom {
+    padding-bottom: 2px;
+}
+
+.content-wrapper {
+    background: #e6e7e8;
+    padding: 20px 0;
+}
+
+.flash-news {
+    overflow: hidden;
+}
+
+.marquee {
+    flex: 1;
+    overflow: hidden;
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 18s linear infinite;
+}
+
+.marquee-track p {
+    margin: 0;
+    padding: 0 40px;
+    white-space: nowrap;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+header .navbar .navbar-brand img {
+    width: 122px;
+    padding: 2px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.navbar-brand.footers img {
+    width: 140px;
+    height: auto;
+}
+
+header .navbar-bottom .navbar-nav .nav-item .nav-link {
+    padding: 0 10px;
+}
+
+.rotate-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card .card-title {
+    padding-left: 8px;
+}
+
+/* #big-thumb img {
+    height: 492px;
+} */
+
+.card-videos img {
+    height: 123px;
+    width: 324px;
+}
+
+.card .card-body .card-title::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    background: #BA0300;
+    left: 10px;
+    top: 3px;
+}
+
+.rotate-img:hover img {
+    -webkit-transform: rotate(0deg) scale(1.1);
+    transform: rotate(0deg) scale(1.1);
 }
