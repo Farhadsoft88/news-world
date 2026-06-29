@@ -107,16 +107,6 @@
                                       العربية
                                   </a>
                               </li>
-
-                              <li>
-                                  <a class="dropdown-item"
-                                    href="#"
-                                    onclick="changeLanguage('fr','French','fr')">
-                                      <img src="https://flagcdn.com/w40/fr.png" width="22" class="me-2">
-                                      Français
-                                  </a>
-                              </li>
-
                           </ul>
                       </div>
 
@@ -130,8 +120,8 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <div>
                     <a class="navbar-brand" href="index.html" style="color: #fff;font-size: 40px;">
-                      <!-- <img src="assets/images/logo.svg" alt=""/> -->
-                       NEWS WORLD
+                      <img src="assets/images/logo.webp" alt=""/>
+                  
                     </a>
                   </div>
                   <div>
@@ -202,18 +192,24 @@
         <div class="flash-news-banner">
           <div class="container">
             <div class="d-lg-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center">
-                <span class="badge badge-dark mr-3">Flash news</span>
-                <p class="mb-0">
-                  Lorem Ipsum has been the industry's standard dummy text ever
-                  since the 1500s.
-                </p>
+              <div class="d-flex align-items-center flash-news">
+              <span class="badge badge-dark myflash mr-3">Flash News</span>
+
+              <div class="marquee">
+                  <div class="marquee-track">
+                      <!-- First Set -->
+                      <p>Breaking: Lorem Ipsum has been the industry's standard dummy text.</p>
+                      <p>Latest: New updates are available for all users today.</p>
+                      <p>Headline: Stay connected for more exciting news and updates.</p>
+
+                      <!-- Duplicate Set -->
+                      <p>Breaking: Lorem Ipsum has been the industry's standard dummy text.</p>
+                      <p>Latest: New updates are available for all users today.</p>
+                      <p>Headline: Stay connected for more exciting news and updates.</p>
+                  </div>
               </div>
-              <div class="d-flex">
-                <span class="mr-3 text-danger">
-				      </span>
-                <span class="text-danger myclocks"><iframe src="https://free.timeanddate.com/clock/i8hazy09/n73/tlbd43/fn14/fs16/fcd1011c/ftb/tt0/tw1/tm1/th2/tb1" frameborder="0" width="354" height="23"></iframe></span>
-              </div>
+          </div>
+
             </div>
           </div>
         </div>
@@ -221,7 +217,7 @@
 
         <div class="content-wrapper">
           <div class="container">
-            <div class="row" data-aos="fade-up">
+            <div class="row" data-aos="fade-up" id="mm">
               
               <div class="col-xl-5 stretch-card grid-margin">
                   <a href="#">
@@ -243,7 +239,7 @@
 
               <div class="col-xl-4 stretch-card grid-margin">
                 <div class="card bg-darks">
-                  <div class="card-body">
+                  <div class="card-body latest_news">
                     <h2>Latest news</h2>
 
                     <div class="d-flex border-bottom-blue pt-4 pb-3 align-items-center justify-content-between">
@@ -256,7 +252,7 @@
                       <div class="rotate-img">
                         <img src="assets/images/dashboard/home_1.jpg"
                           alt="thumb"
-                          class="img-fluid img-lg"
+                          class="img-fluid img-lg" style="width: 150px;"
                         />
                       </div>
                     </div>
@@ -271,17 +267,11 @@
                         </div>
                       </div>
                       <div class="rotate-img">
-                        <img
-                          src="assets/images/dashboard/home_2.jpg"
-                          alt="thumb"
-                          class="img-fluid img-lg"
-                        />
+                        <img  src="assets/images/dashboard/home_2.jpg"  alt="thumb" class="img-fluid img-lg" style="width: 150px;"/>
                       </div>
                     </div>
 
-                    <div
-                      class="d-flex pt-3 align-items-center justify-content-between"
-                    >
+                    <div class="d-flex pt-3 align-items-center justify-content-between">
                       <div class="pr-3">
                         <h5>Virus Kills Member Of Advising Iran’s Supreme</h5>
                         <div class="fs-12">
@@ -292,7 +282,7 @@
                         <img
                           src="assets/images/dashboard/home_3.jpg"
                           alt="thumb"
-                          class="img-fluid img-lg"
+                          class="img-fluid img-lg" style="width: 150px;"
                         />
                       </div>
                     </div>
@@ -305,9 +295,9 @@
                   <div class="card-body">
                     <div class="card bg-darks">
 
-                      <div class="card-videos">
+                      <div class="card-videos border-bottom-blue">
                           <h2>পডকাস্ট</h2>
-                          <div class="d-flex border-bottom-blue pb-3 align-items-center justify-content-between">
+                          <div class="d-flex pb-1 align-items-center justify-content-between">
                             <div class="position-relative">
                               <div class="rotate-img">
                                 <img
@@ -316,6 +306,7 @@
                                   class="img-fluid"
                                 />
                               </div>
+                              
                               <div class="badge-positioned w-90">
                                 <div
                                   class="d-flex justify-content-between align-items-center"
@@ -331,6 +322,10 @@
                               </div>
                             </div>
                           </div>
+
+                          <p class="fs-15 font-weight-600 mb-1 mt-0">
+                              Kaine: Trump Jr. may have
+                          </p>
                       </div>
 
                       <div class="card-videos mt-2">
@@ -359,6 +354,9 @@
                               </div>
                             </div>
                           </div>
+                          <p class="fs-15 font-weight-600 mb-1 mt-0">
+                              Kaine: Trump Jr. may have
+                          </p>
                       </div>
 
                     </div>
@@ -371,7 +369,7 @@
            
             <div class="row" data-aos="fade-up">
               <div class="col-sm-12 grid-margin">
-                <div class="card">
+                <div class="card bg-dark text-white">
                   <div class="card-body">
                     <div class="row">
                       <div class="col-lg-8">
@@ -379,7 +377,7 @@
                           ভিডিও
                         </div>
                         <div class="row">
-                          <div class="col-sm-6 grid-margin">
+                          <div class="col-sm-6 grid-margin video_gird">
                             <div class="position-relative">
                               <div class="rotate-img">
                                 <img
@@ -402,6 +400,9 @@
                                 </div>
                               </div>
                             </div>
+                            <p class="fs-16 font-weight-600 mb-1 mt-1">
+                              Kaine: Trump Jr. may have
+                          </p>
                           </div>
 
                           <div class="col-sm-6 grid-margin">
@@ -427,6 +428,9 @@
                                 </div>
                               </div>
                             </div>
+                            <p class="fs-16 font-weight-600 mb-1 mt-1">
+                              Kaine: Trump Jr. may have
+                            </p>
                           </div>
                         </div>
                         <div class="row">
@@ -453,6 +457,10 @@
                                 </div>
                               </div>
                             </div>
+
+                          <p class="fs-16 font-weight-600 mb-1 mt-1">
+                              Kaine: Trump Jr. may have
+                          </p>
                           </div>
 
                           <div class="col-sm-6 grid-margin">
@@ -478,6 +486,9 @@
                                 </div>
                               </div>
                             </div>
+                            <p class="fs-16 font-weight-600 mb-1 mt-1">
+                              Kaine: Trump Jr. may have
+                          </p>
                           </div>
                         </div>
                       </div>
@@ -570,6 +581,22 @@
                             Powerful Moments of Peace
                           </h3>
                         </div>
+                        <div
+                          class="d-flex justify-content-between align-items-center pt-3"
+                        >
+                          <div class="div-w-80 mr-3">
+                            <div class="rotate-img">
+                              <img
+                                src="assets/images/dashboard/home_15.jpg"
+                                alt="thumb"
+                                class="img-fluid"
+                              />
+                            </div>
+                          </div>
+                          <h3 class="font-weight-600 mb-0">
+                            Powerful Moments of Peace
+                          </h3>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -613,9 +640,9 @@
                       <div class="col-xl-6">
                         <div class="row">
                           <div class="col-sm-12">
-                            <div class="card-title">
-                              <!-- Sport light -->
-                            </div>
+                            <!-- <div class="card-title">
+                              Sport light
+                            </div> -->
 
                             <div class="card-grids">
                              
@@ -728,9 +755,9 @@
                       <div class="col-xl-6">
                         <div class="row">
                           <div class="col-sm-12">
-                            <div class="card-title">
-                              <!-- Sport light -->
-                            </div>
+                            <!-- <div class="card-title">
+                              Sport light
+                            </div> -->
 
                             <div class="card-grids">
                              
@@ -843,9 +870,9 @@
                       <div class="col-xl-6">
                         <div class="row">
                           <div class="col-sm-12">
-                            <div class="card-title">
-                              <!-- Sport light -->
-                            </div>
+                            <!-- <div class="card-title">
+                              Sport light
+                            </div> -->
 
                             <div class="card-grids">
                              
@@ -958,9 +985,9 @@
                       <div class="col-xl-6">
                         <div class="row">
                           <div class="col-sm-12">
-                            <div class="card-title">
-                              <!-- Sport light -->
-                            </div>
+                            <!-- <div class="card-title">
+                              Sport light
+                            </div> -->
 
                             <div class="card-grids">
                              
@@ -1073,9 +1100,9 @@
                       <div class="col-xl-6">
                         <div class="row">
                           <div class="col-sm-12">
-                            <div class="card-title">
-                              <!-- Sport light -->
-                            </div>
+                            <!-- <div class="card-title">
+                              Sport light
+                            </div> -->
 
                             <div class="card-grids">
                              
@@ -1188,9 +1215,9 @@
                       <div class="col-xl-6">
                         <div class="row">
                           <div class="col-sm-12">
-                            <div class="card-title">
-                              <!-- Sport light -->
-                            </div>
+                            <!-- <div class="card-title">
+                              Sport light
+                            </div> -->
 
                             <div class="card-grids">
                              
@@ -1303,9 +1330,9 @@
                       <div class="col-xl-6">
                         <div class="row">
                           <div class="col-sm-12">
-                            <div class="card-title">
-                              <!-- Sport light -->
-                            </div>
+                            <!-- <div class="card-title">
+                              Sport light
+                            </div> -->
 
                             <div class="card-grids">
                              
@@ -1418,9 +1445,9 @@
                       <div class="col-xl-6">
                         <div class="row">
                           <div class="col-sm-12">
-                            <div class="card-title">
-                              <!-- Sport light -->
-                            </div>
+                            <!-- <div class="card-title">
+                              Sport light
+                            </div> -->
 
                             <div class="card-grids">
                              
@@ -1511,9 +1538,9 @@
             <div class="container">
               <div class="row">
                 <div class="col-sm-5">
-                   <a class="navbar-brand" href="#" style="color: #fff;font-size: 40px;">
-                      <!-- <img src="assets/images/logo.svg" alt=""/> -->
-                       NEWS WORLD
+                   <a class="navbar-brand footers" href="#" style="color: #fff;font-size: 40px;">
+                      <img src="assets/images/Logo-red.webp" alt=""/>
+                   
                     </a>
                   <h5 class="font-weight-normal mt-4 mb-5">
                     Newspaper is your news, entertainment, music fashion website. We
